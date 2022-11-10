@@ -1,0 +1,8 @@
+<div class="m-auto max-w-6xl absolute top-38">
+  <div class="p-8 shadow rounded-3xl backdrop-blur-lg bg-white/20">
+    <canvas width="500" height="500"></canvas>
+    <%= link "Go Back", to: Routes.page_path(@conn, :index), class: "block p-2 pl-5 pr-5 w-32 text-center transition-colors duration-700 transform bg-red-600 hover:bg-red-500 text-gray-100 text-lg rounded-lg border-red-300 m-auto" %>
+  </div>
+</div>
+
+<script type="module" src={Routes.static_path(@conn, "/assets/scripts/heart.js")}></script>

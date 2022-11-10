@@ -1,0 +1,82 @@
+<div class="p-16 pb-0 m-auto max-w-6xl">
+  <div class="p-8 shadow mt-24 rounded-3xl backdrop-blur-lg bg-white/20">
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <div
+        class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0"
+      >
+        <a href="https://www.linkedin.com/in/leminhminh/" target="_blank" rel="nonoreferrer" class="text-3xl text-[#0177B5]">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/leminh0796" target="_blank" rel="nonoreferrer" class="text-3xl">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+        <a href="https://t.me/usernamechecked" target="_blank" rel="nonoreferrer" class="text-3xl text-[#0088CC]">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+      </div>
+      <div class="relative">
+        <div
+          class="w-48 h-48 bg-indigo-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500 bg-center"
+          style={get_my_avatar()}
+        />
+      </div>
+
+      <div
+        class="space-x-8 flex justify-between mt-32 md:mt-0 md:justify-center"
+      >
+        <button
+          onclick="location.href='mailto:tlminh.comsci@gmail.com';"
+          class="text-white py-2 px-4 uppercase rounded bg-blue-400 hover:bg-blue-500 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
+        >
+          Connect
+        </button>
+        <%= link "CUTE HEART", to: Routes.page_path(@conn, :heart), class: "text-white py-4 px-6 uppercase rounded bg-red-500 hover:bg-red-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5 self-center" %>
+      </div>
+    </div>
+
+    <div class="mt-20 text-center border-b pb-6">
+      <h1 class="font-mono text-4xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        Hi I'm Minh
+      </h1>
+      <p class="font-mono font-light text-slate-100 mt-3">Ho Chi Minh, Vietnam</p>
+
+      <p class="font-mono mt-8 text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-orange-500">Fullstack Web Developer at Tech Apollo</p>
+      <p class="font-mono mt-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-100 to-blue-600">Ho Chi Minh University of Technology</p>
+      <div class="flex flex-row justify-center text-5xl mt-8 gap-4">
+        <a href="https://www.ruby-lang.org/en/" target="_blank" rel="nonoreferrer">
+          <img src="images/ruby.svg" class="max-h-11"/>
+        </a>
+        <a href="https://rubyonrails.org/" target="_blank" rel="nonoreferrer">
+          <img src="images/rails.svg" class="max-h-11"/>
+        </a>
+        <a href="https://elixir-lang.org/" target="_blank" rel="nonoreferrer">
+          <img src="images/elixir-lang.svg" class="max-h-11"/>
+        </a>
+        <a href="https://www.phoenixframework.org/" target="_blank" rel="nonoreferrer">
+          <i class="fa-brands fa-phoenix-framework text-[#FE4F00]"></i>
+        </a>
+        <a href="https://reactjs.org/" target="_blank" rel="nonoreferrer">
+          <i class="fa-brands fa-react text-[#5ED2F3]"></i>
+        </a>
+        <a href="https://www.javascript.com/" target="_blank" rel="nonoreferrer">
+          <i class="fa-brands fa-js text-[#F0DB4F]"></i>
+        </a>
+        <a href="https://aws.amazon.com/" target="_blank" rel="nonoreferrer">
+          <i class="fa-brands fa-aws text-[#F69400]"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-2 flex flex-col justify-center text-center">
+      <h1 class="ml9">
+        <span class="text-wrapper">
+          <span class="font-thin text-transparent text-4xl bg-clip-text bg-gradient-to-r from-pink-300 to-purple-500 letters">
+            Ideas that drive the world
+          </span>
+        </span>
+      </h1>
+    </div>
+  </div>
+</div>
+
+<script type="module" src={Routes.static_path(@conn, "/assets/scripts/anime-text.js")}></script>
