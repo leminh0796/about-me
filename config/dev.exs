@@ -28,7 +28,7 @@ config :about_me, AboutMeWeb.Endpoint,
     # Start the esbuild watcher by calling Esbuild.install_and_run(:default, args)
     node: [
       "build.js",
-      cd: Path.expand("../assets/scripts/", __DIR__),
+      cd: Path.expand("../assets/", __DIR__),
       env: %{"ESBUILD_LOG_LEVEL" => "silent", "ESBUILD_WATCH" => "1", "NODE_ENV" => "development"}
     ],
   ]

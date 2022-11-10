@@ -6,18 +6,21 @@ let plugin = require('tailwindcss/plugin')
 module.exports = {
   mode: 'jit',
   content: [
-		'../../lib/**/*.ex',
-		'../../lib/**/*.leex',
-		'../../lib/**/*.heex',
-		'../../lib/**/*.lexs',
-		'../../lib/**/*.exs',
-		'../../lib/**/*.eex',
-		'../js/**/*.js'
+		'../lib/**/*.ex',
+		'../lib/**/*.leex',
+		'../lib/**/*.heex',
+		'../lib/**/*.lexs',
+		'../lib/**/*.exs',
+		'../lib/**/*.eex',
+		'./js/**/*.js'
 	],
   theme: {
     extend: {
       backgroundImage: {
-        'beautiful': "url('../images/background.webp')",
+        'beautiful': "url('../static/images/background.webp')",
+      },
+      height: {
+        'fit-content': 'fit-content'
       }
     },
   },
