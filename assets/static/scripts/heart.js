@@ -5,7 +5,7 @@ const {
 
 // set up the illustration within the existing canvas element
 const illustration = new Illustration({
-  element: 'canvas',
+  element: '#baby-heart',
   dragRotate: true,
 });
 

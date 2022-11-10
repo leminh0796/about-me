@@ -1,8 +1,10 @@
-<div class="m-auto max-w-6xl">
-  <div class="p-8 shadow rounded-3xl backdrop-blur-lg bg-white/20 h-[125vh] sm:h-full">
-    <canvas width="500" height="500"></canvas>
-    <%= link "Go Back", to: Routes.page_path(@conn, :index), class: "block p-2 pl-5 pr-5 w-32 text-center transition-colors duration-700 transform bg-red-600 hover:bg-red-500 text-gray-100 text-lg rounded-lg border-red-300 m-auto" %>
+<div class="m-auto max-w-6xl z-20">
+  <div class="p-8 shadow rounded-3xl backdrop-blur-sm bg-white/20 h-[125vh] sm:h-full">
+    <canvas id="baby-heart" width="500" height="500" class="cursor-pointer"></canvas>
+    <%= link "Go Back", to: Routes.page_path(@conn, :index), class: "z-30 block p-2 pl-5 pr-5 w-32 text-center transition-colors duration-700 transform bg-red-600 hover:bg-red-500 text-gray-100 text-lg rounded-lg border-red-300 m-auto" %>
   </div>
 </div>
+<div id="particles-js" class="absolute z-10 h-screen"></div>
 
 <script type="module" src={Routes.static_path(@conn, "/assets/scripts/heart.js")}></script>
+<script type="module" src={Routes.static_path(@conn, "/assets/scripts/heartParticles.js")}></script>
