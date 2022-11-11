@@ -9,6 +9,11 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts/";
 @import "tailwindcss/utilities";
 
 /* This file is for your main application CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 /* Alerts and form errors used by phx.new */
 .alert {
